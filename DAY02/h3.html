@@ -1,0 +1,109 @@
+<html>
+ <head><title>html/css.javascript</title>
+ </head>
+ <body>
+  <h3>리스트(ul-li)</h3>
+  <ul> <!-- ul은 li와 세트, ul은 순서가 없을때 사용, type은 disc,circle,square 존재 -->
+   <li>한식 <!-- li는 각 데이터, li에 타입을 주는것도 가능 -->
+    <ul>
+      <li>비빔밥</li>
+      <li>김치
+        <ul>
+          <li>배추김치</li>
+          <li>동치미</li> 
+    </ul>
+   </li>
+   </ul>
+   </li>
+   <li>중식
+     <ul>
+       <li>자장면</li>
+       <li>짬뽕</li>
+       <li>탕수육</li>
+     </ul>
+   </li>
+   <li>양식
+      <ul>
+        <li>돈까스</li>
+        <li>파스타</li>
+        <li>스테이크</li>
+      </ul>
+   </li>
+   <li>간식
+     <ul>
+       <li type = square>어묵</li>
+       <li type = disc>떡볶이</li>
+       <li type = circle>튀김</li>
+     </ul>
+   </li>
+  </ul>
+  <hr>
+  <h3>ol-li list</h3> 
+    <ol> <!-- ol은 ul과 다르게 순서가 존재함.(번호를 매길때 사용하기 용이함) type=1,a,A,i,I가 존재하고 i는 로마자 -->
+     <li>국문학
+       <ol type = A start = 5> <!-- start 뒤에 넣은 번호부터 시작함-->
+         <li>소설</li>
+         <li>희곡</li>
+       </ol>
+     </li>
+     <li>컴퓨터
+      <ol type = a>
+        <li>html
+         <ol type = i>
+          <li>hr tag</li>
+          <li>br tag</li>
+         </ol>
+        </li>
+        <li>css</li>
+        <li>javascript</li>
+      </ol>
+     </li>
+     <li>대중음악
+      <ol type = I>
+       <li>가요</li>
+       <li>뮤지컬
+         <ul>
+          <li>엘리자벳</li>
+            <ol type = 1 start = 9>
+             <li>옥주현</li>
+             <li>엄태경</li>
+            </ol>
+          <li>레베카</li>
+            <ol>
+             <li></li>
+             <li></li>
+            </ol>
+         </ul>
+       </li>
+       <li>댄스</li>
+         <ul>
+          <li>스우파</li>
+          <li>스걸파</li>
+         </ul>
+       <li>발라드</li>
+       <li>힙합</li>
+      </ol>
+     </li>
+    </ol>
+    <hr>
+  <h3>dl-dt(용어)-dd(설명)</h3> <!-- 용어를 설명할때 사용하는 코드 -->
+   <dl>
+    <dt><b>IE</b>
+      <dd> 마이크로소프트에서 만든 브라우저로 국내 시장에서 가장 많이 사용되었으나 지금은 사장됨</dd>
+    <dt><b><mark>Chrome</mark></b>
+     <dd>구글에서 만든 브라우저로 좋은 디버거를 갖추고 있어 디버깅에 많이 사용됨</dd>
+    <dt><b>Firefox</b>
+     <dd>Mozilla 재단에서 오픈 소스로 만든 것으로 W3C의 웹 표준을 선도함</dd>
+   </dl>
+   <hr>
+ <h3>나의 가족들</h3>
+   <ul>
+     <li type = square>이재영</li>
+     <li type =square>최혜정</li>
+     <ol type = i>
+      <li>이승준</li>
+      <li>이수연</li>
+     </ol>
+   <ul>
+ </body>
+</html>

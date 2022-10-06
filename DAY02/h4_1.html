@@ -1,0 +1,34 @@
+<html>
+ <head>
+  <meta charset = "UTF-8">
+  <title>table-basic</title>
+ </head>
+ <body>
+  <h3>table 만들기</h3>
+  <hr>
+  <table border=1 width = 500px height = 400px align = center>
+    <caption>table</caption>
+    <tr>
+     <td rowspan = 3>1</td> <!-- rowspan은 표의 셀을 가로로 병합하는 코드(열병합)이며 병합하는 셀에는 td를 사용하지 않는다. =뒤에 숫자만큼 병합함 -->
+     <td colspan = 2>2</td> <!-- colspan은 표의 셀을 세로로 병합하는 코드(행병합)이며 병합되는 셀은 td를 사용하지 않는다. =뒤에 숫자만큼 병합함. -->
+     <td>4</td>
+    </tr>
+    <tr>
+     <td rowspan = 2>6</td>
+     <td>7</td>
+     <td>8</td>
+    </tr>
+    <tr>
+
+     <td colspan = 2>11</td>
+    </tr>
+    <tr>
+     <td>13</td>
+     <td>14</td>
+     <td>15</td>
+     <td>16</td>
+    </tr>
+  </table>
+  
+ </body>
+</html>

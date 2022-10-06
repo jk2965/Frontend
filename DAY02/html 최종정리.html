@@ -1,0 +1,102 @@
+<html>
+ <head>
+  <meta charset = "UTF-8">
+  <title>html-최종정리</title>
+ </head>
+ <body>
+ <h3>피자 주문하기</h3>
+  <form>
+  <fieldset><legend>고객정보</legend>
+  <!-- fieldset과 legend를 같은 줄에 써서 legend도 filedset에 포함되게 만들어줌 -->
+   <table border=1 align=center>
+    <tr>
+     <td>고객이름</td>
+     <td><input type=text value=hong name=name></td>
+    <tr>
+    <tr>
+     <td>전화번호</td>
+     <td><input type=tel value=010- name=tel></td>
+    <tr>
+    <tr>
+     <td>메일주소</td>
+     <td><input type=email value=id@host name=email></td>
+    <tr>
+   </table>
+  </fieldset>
+  <fieldset><legend>피자 종류</legend>
+   <table border=1 align=center width=500 style=border-collapse:collapse>
+   <!-- style=border-collapse:collapse = 테두리 1줄만 나오게 하는 코드  -->
+    <thead>
+     <tr>
+      <th><input type=checkbox name=PIZZA1 id=w>PIZZA1</th>
+      <th><input type=checkbox name=PIZZA2 id=x>PIZZA2</th>
+      <th><input type=checkbox name=PIZZA3 id=y>PIZZA3</th>
+      <th><input type=checkbox name=PIZZA4 id=z>PIZZA4</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr align=center>
+      <td><label for=w><img src="C:\Users\user\Desktop\html\image\image\pizza1.jpg" width=125 height=125></label></td>
+      <td><label for=x><img src="C:\Users\user\Desktop\html\image\image\pizza2.jpg" width=125 height=125></label></td>
+      <td><label for=y><img src="C:\Users\user\Desktop\html\image\image\pizza3.jpg" width=125 height=125></label></td>
+      <td><label for=z><img src="C:\Users\user\Desktop\html\image\image\pizza4.jpg" width=125 height=125></label></td>
+     </tr>
+    </tbody>
+   </table>
+  </fieldset>
+  <fieldset><legend>피자크기</legend>
+   <table align=center border=1 width=500 style=border-collapse:collapse>
+    <th><input type=radio name=피자크기>Small</th>
+    <th><input type=radio name=피자크기>Medium</th>
+    <th><input type=radio name=피자크기>Large</th>
+    <th><input type=radio name=피자크기>Super big</th>
+   <!-- radio버튼의 name이 똑같아야지 중복으로 누르는 것이 방지된다. -->
+   </table>
+  </fieldset>
+  <fieldset><legend>피자 토핑 고르기</legend>
+   <table border=1 align=center width=500 style=border-collapse:collapse width=500>
+    <tr>
+     <th><input type=checkbox list=토핑 name=베이컨>베이컨</th>
+     <th><input type=checkbox list=토핑 name=치즈>치즈</th>
+     <th><input type=checkbox list=토핑 name=양파>양파</th>
+     <th><input type=checkbox list=토핑 name=버섯>버섯</th>
+     <th><input type=checkbox list=토핑 name=새우>새우</th>
+    </tr>
+   </table>
+  </fieldset>
+  <fieldset><legend>추가 주문</legend>  
+   <table border=1  style=border-collapse:collapse align=center width=500>
+    <tr>
+     <th><input type=checkbox list=추가 name=코카콜라>코카콜라</th>
+     <th><input type=checkbox list=추가 name=스프라이트>스프라이트</th>
+     <th><input type=checkbox list=추가 name=환타>환타</th>
+     <th><input type=checkbox list=추가 name=감자튀김>감자튀김</th>
+     <th><input type=checkbox list=추가 name=치즈추가>치즈추가</th>
+    </tr>
+   </table>
+  </fieldset> 
+  <fieldset><legend>원하는 배달 시간</legend>
+   <table border=1 style=border-collapse:collapse width=300 align=center> 
+    <!-- table자체에 align을 줘서 table의 위치를 가운데로 옮기고 -->
+    <tr align=center>
+    <!-- tr에 align을 줘서 배달 시간의 위치를 가운데로 옮김 -->
+     <td><input type=time name=배달 시간 value=""></td>
+    </tr>
+   </table>
+  </fieldset>
+  <fieldset><legend>배달 요구 사항</legend>
+   <table align=center border=1>
+    <tr>
+     <td><textarea rows=10 cols=40 name=요구사항>	부재시 경비실에 맡겨주세요</textarea></td>
+    <tr>
+   </table>
+  </fieldset>
+  <br><br>
+  <table align=center>
+   <tr>
+    <td><input type=submit value=피자주문하기><td>
+   </tr>
+  </table>
+  </form>
+ </body>
+</html>

@@ -1,0 +1,86 @@
+<html> 
+ <!-- html은 기본적으로  <>안에 명령어를 쓰고 닫아줘야함. <명령어>와 </명령어>가 짝이되며 /가 있는 쪽이 명령어를 끝내주는 역할을 함. -->
+ <!-- <>안에 속성값을 넣어서 수정해줌 -->
+ <head><title>html/css.javascript</title> 
+ <!-- head부분은 작업 표시줄쪽. title은 작업표시줄에 표시되는 이름 -->
+
+ </head>
+ <body> 
+ <!-- body는 페이지에 띄워주는 역할을 함.--> 
+  페이지에 타이틀을 다는 예제입니다.<br>
+  타이틀은 브라우저의 타이틀바에 보여집니다<br>
+  <!-- br은 줄을 넘기는 역할 \n과 비슷한 역할을 해주며 </br>로 닫아줄 필요 x -->
+  <hr>
+   <h1> 1장 홈페이지 만들기 </h1>
+   <h2> 1절 html 언어 </h2>
+   <h3> 웹 </h3>
+   <h4> 1.1 인터넷 < /h4>
+   <h5>1.1.1 네트워크</h5>
+   <h6>1.1.1.1 통신</h6> 
+   <!-- h뒤에 숫자는 6까지 오는데 숫자가 커질수록 글자의 크기가 작아짐 -->
+   <hr>
+   <!-- hr = 수평선  </hr>로 닫아줄 필요 없음-->
+   여러	개의 빈칸은 하나로 취급되며, <br>
+   <pre>
+    pre 태그를 사용하면
+		사용자가 입력한
+				그대로 입력됩니다 (많이는 안씀)
+   </pre>
+   <!-- pre태그는 block을 만드는 태그로 사용자가 입력한 그대로 받아 오는 태그, 잘 쓰이지는 않는듯 -->
+   <hr>
+   <img src = C:\Users\user\Desktop\html\image\image\animal1.jpg title=*dog border = 3 width = 200px height = 100px><br><br>
+    <!-- 넣을 이미지에 오른쪽 마우스를 사용해 경로로 복사를 사용하여 src에 넣어주면됨-->
+    <img src=https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png border = 5 title ="다음">
+    <!-- 이미지를 가져오는 태그로 인터넷에서 이미지를 긁어올때는 긁어올 이미지에 오른쪽 마우스 클릭해서 이미지 주소 복사하고 그걸 src에 넣어주면 됨 -->
+    <hr>
+    <h3>문자 기호 심볼 표현</h3>
+     10 &divide; 2 = 5<br>
+     10 &#247; 2 = 5<br>
+     &radic;2 = 1.414<br>
+     100 &ndsp; &ndsp; &ndsp; &ndsp; 200<br>
+     오늘 "김광석" 노래를 들었다.<br>
+     오늘 &quot;김광석&quot; 노래를 들었다.<br>
+     오늘 &amp;김광석&amp; 노래를 들었다.<br>
+     오늘 &#64;김광석&#64; 노래를 들었다.<br>
+     오늘&ndsp;&ndsp;&ndsp;&ndsp;&ndsp;김광석 노래를 들었다.<br>
+     <!-- &뒤에 문자로 특수문자를 사용하며 #은 16진수를 의미함.  -->
+     <hr>
+  <div style = "border:3px solid red">
+  <!-- div 코드는 박스를 생성-->
+   내가 사람의 방언과<br>
+   <p style = "border:3px solid black"> 천사의 말을 할지라도 </p>
+   <!--  <p>태그는 box를 생성하는 태그, border는 테두리 -->
+   사랑이 없으면 <span style ="background-color:yellow"> 아무것도</span> 아니라<br>
+  </div>
+  <h3>텍스트 꾸미기</h3>
+  <p style="color:blue">
+    보통 글자 <br>
+   <b>진하게 쓰기(볼드체)</b><br>
+   <em>강조 하기(이탤릭체) </em><br>
+   <i>이탤릭으로</i> 쓰기<br>
+   <b><i>진하게 이탤릭으로 강조</i></b><br>
+   보통 문자 <small> 한 단계 작은 문자</small><br>
+   보통 문자 <big> 한 단계 큰 문자</big><br>
+   <del>삭제하기</del><br>
+   <ins>추가</ins><br>
+   보통 문자의 <sup> 윗첨자 </sup><br>
+   보통 문자의 <sub> 아랫첨자 </sub><br>
+   <mark>하이라이팅</mark><br>
+   <ruby>
+    <span>大韓民國</span>
+    <rt>대한민국</rt>
+   </ruby>
+   <!-- ruby와 rt는 세트라고 생각하면 편함. -->
+  </p>
+  <hr>
+  <h3>음악이 연주됩니다.</h3>
+    <audio src="C:\Users\user\Desktop\html\image\image\kalimba.mp3" controls autoplay loop></audio>
+     <!-- 오디오 삽입 코드, 경로를 복사해 가져와서 src에 넣고 controls를 넣으면 재생가능, autoplay는 자동재생(?) loop는 반복재생(?) -->
+  <hr>
+  <h3>video 삽입</h3>
+  <video src = "C:\Users\user\Desktop\html\image\image\wildlife.mp4" autoplay controls loop width=320 height = 240></video><br><br>
+  <!-- video 삽입 코드, 크기조절 가능, controls로 재생가능, autoplay는 자동재생(?)  -->
+<iframe width="640" height="522" src="https://www.youtube.com/embed/UA0oWOCs8_o" title="비망록 (스물의 노래)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- 유튜브 영상을 가져오는것은 유튜브 영상에 오른쪽 마우스를 클릭하여 소스 복사를 누른다음 붙여넣으면 끝, iframe으로 가져옴-->
+ </body> 
+</html>

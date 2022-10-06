@@ -1,0 +1,15 @@
+1.homepage 틀 -> html안에 css(style), javascript를 추가
+2.tag
+ - 기본 구성 코드
+ - 헤드라인체 : h1,h2,h3,h4,h5,h6 숫자가 커질수록 글자는 작아짐
+ - br, hr, img : 닫을 때 슬래시가 필요 없음
+ - pre
+ - audio,video
+ - block(div, p), span(text)
+ - &divide;, &ndsf;(공백),&gt;(큰),&lt;(작은),&amp;(@),&quot;
+ - small,big,mark,sup,sub,ins,em,i,b :글자를 쓸 떄 사용되는 코드
+ - ul-li(type= square,disc,circle),ol-li(type = 1,a,A,i,I start = 시작을 어디서 하고 싶은지)
+ - dl-dt(용어)-dd(설명)
+ - table(tr, td, caption,thead, tbody,tfoot,colspan,rowspan)
+ - a(href),a=id
+ - iframe

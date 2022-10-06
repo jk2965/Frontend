@@ -1,0 +1,189 @@
+<html>
+ <head>
+  <meta charset = "UTF-8">
+  <title>form-tagg</title>
+ </head>
+ <body>
+  <h3>자기소개서 작성하기</h3> 
+  <hr>
+  <form method ="get"><!--post-->
+  <!-- form 생성 method는 get방식 -->
+    이름: <input type="text" name = "namex" value="honggildong"><br><br>
+    <!-- 이름 입력, 타입=텍스트 ,받은 데이터 이름은 namex 초기값=홍길동-->
+    암호: <input type="password" name = "pass" value=""><br><br>
+    <!-- 암호 입력, 타입은 패스워드, 받은 데이터의 이름은 pass, 초기값은 "">
+    자소서<br>
+    <textarea rows = 10 cols = 50 name = "me">이곳에 자소서를 작성하세요</textarea><br><br>
+    <!-- 한 줄에 50글자가 들어가는 10줄의 textarea 생성 데이터의 이름은 me, 초기값은 이곳에 자소서를 작성하세요 -->
+    <input type="submit" value="전송하기">
+    <!-- 데이터 전송하는 버튼 생성-->
+  </form>
+  <hr>
+  <h3>데이터 목록을 가진 텍스트 입력</h3>
+  <form method ="get">
+   나라: <input type="text" list="country" name="country"><br>
+   <!-- 타입이 텍스트고 리스트가 country인 곳을 생성 -->
+           <datalist id="country">
+           <!-- id가 country인 데이터리스트 생성, datalist id와 list의 이름이 같아야함 -->
+            <option value="가나">
+            <option value="스위스">
+            <option value="브라질">
+            <option value="스페인">
+            <!-- 데이터리스트의 옵션들-->
+           </datalist><br> 
+   여행: <input type="text" list ="trip" name="trip"><br>
+           <datalist id="trip">
+            <option value=산>
+            <option value=도시>
+            <option value=바다>
+            <option value=계곡>
+           </datalist><br>
+   <input type="submit" value="전송하기">
+  </form>
+  <hr>
+  <h3>다양한 버튼</h3>
+  <form method="get">
+   검색: <input type="text" name="text" size = 30 value="">
+   <!-- 사이즈가 30이고 초기값이 "", 받은 데이터의 이름이 name인 텍스트 창 생성 -->
+   <input type ="button" value=Q1>
+   <button type=button >Q2</button><br><br>
+   <!-- 일반적인 버튼을 생성하는 2가지 방법-->
+   submit 버튼: 
+   <input type=submit value="submit">
+   <button type =submit>submit</button><br><br>
+   <!-- submit 버튼(전송)을 생성하는 2가지 방법-->
+   reset 버튼:
+   <input type="reset" value="지우기">
+   <button type=reset>지우기</button><br><br>
+   <!-- 데이터를 리셋하는 버튼을 만드는 2가지 방법 -->
+   image 버튼:
+   <input type="image" src="C:\Users\user\Desktop\html\image\image\button.png">
+   <button type=button><img src="C:\Users\user\Desktop\html\image\image\button.png"></button><br><br>
+   <!-- image를 사용하는 버튼을 만드는 2가지 방법 -->
+  </form>
+  <hr>
+   <h3>checkbox, radio button</h3>
+  <form method = get>
+   <label>짜장면
+   <input type="checkbox" name="food" value ="jjajang">
+   <img src="C:\Users\user\Desktop\html\image\image\jajang.png"></label>&nbsp;&nbsp;&nbsp;&nbsp;
+   <!-- 체크박스 생성 ,받은 데이터 이름은 food 초기값=jjajang, label로 묶인 부분을 누르면 그 부분도 체크박스처럼 작동-->
+
+   짬뽕
+   <input type="checkbox" name="food" value="jjambbong" id="x">
+   <label for=x><img src="C:\Users\user\Desktop\html\image\image\jjambbong.png"></label>&nbsp;&nbsp;&nbsp;&nbsp;
+   <!-- 체크박스 생성 ,받은 데이터 이름은 food 초기값=jjambbong, label로 묶인 부분을 누르면 그 부분도 체크박스처럼 작동-->
+   <!-- for뒤에 있는 값이 id뒤에 있는 값과 같은 부분으로 이동함.-->
+   
+   <label for=y>탕수육</label>
+   <input type=checkbox name=food value=tangsuyook checked id=y>
+   <img src="C:\Users\user\Desktop\html\image\image\tangsuyuk.png"><br><br>
+
+   HTML
+    <input type=radio name=web value=html checked>&nbsp;&nbsp;&nbsp;&nbsp;
+   CSS
+    <input type=radio name=web value=css>&nbsp;&nbsp;&nbsp;&nbsp;
+   JAVASCRIPT 
+    <input type=radio name=web value=javascript><br><br>
+   <!-- 라디오 버튼을 만드는 방법 -->
+   <!-- 라디오 버튼은 name이 같을 시에 보기중에 하나만 선택이 가능함 -->
+   <input type=submit value="submit">
+  </form><br><br>
+ <hr>
+ <h3>콤보 박스 만들기</h3>
+ <h4>즐겨입는 옷 선택하기</h4>
+ <form method="get">
+  <select name=clothes multiple>
+   <option value=청바지>청바지</option>
+   <option value=원피스>원피스</option>
+   <option value=운동복>운동복</option>
+   <option value=투피스>투피스</option>
+   <option value=잠옷>잠옷</option>
+  </select><br><br>
+  <!-- 콤보 박스를 만드는 방법, multiple속성을 사용하면 컨트롤을 눌러 다중 선택이 가능하다.-->
+  <select name="tag">
+   <optgroup label="html">
+    <option>form-tag</option>
+    <option>a-tag</option>
+    <option>table</option>
+    <option>ul-li ol-li</option>
+   </optgroup>
+   <optgroup label="CSS">
+    <option>font-size</option>
+    <option>background-color</option>
+    <option>font-family</option>
+    <option>border</option>
+   </optgroup>
+   <!-- optgroup = 옵션을 그룹화하는것이 가능하다.-->
+  </select>
+  <input type = submit value= submit>
+ </form><br><br>
+ <hr>
+ <h3>폼 입력 그룹으로 묶기</h3>
+ <h4>회원정보를 입력하세요</h4>
+  <fieldset>
+   <!--필드를 지정-->
+  <legend>회원 정보</legend>
+   <!-- legend = 필드의 이름이라고 생각하자.--> 
+   고객이름: <input type="text" name ="name" value="hong"><br>
+   전화번호: <input type="tel" name="tel" value="010-"><br>
+   <!-- 전화번호의 타입은 tel -->
+   홈페이지: <input type="url" name="homepage" value="http://"><br>
+   <!-- 홈페이지의 타입은 url -->
+   메일주소: <input type="email" name="email" value="id@host"><br>
+   <!-- email의 타입은 email -->
+  </fieldset>
+   <small>문의: Mobile : 010-1234-5678</small><br><br>
+   <input type=submit value=submit>
+ <hr>
+ <h3>file 선택하기</h3>
+ <form method=get>
+  <input type= "file" name="file value=""><br><br>
+  <!-- 파일을 선택할때의 타입은 file -->
+  <input type=submit value=submit>
+ </form><br><br>
+ <hr>
+ <h3>시간 정보 입력</h3>
+ <form method="get">
+  month: <input type="month" name="party" value=""><br>
+  week: <input type="week" name="party" value=""><br>
+  date: <input type="date" name="party" value=""><br>
+  time: <input type="time" name=party value=""><br>
+  장소: <input type= "text" name=party value="홍대앞"><br>
+  local: <input type="datetime-local" name=party value=""><br><br>
+ <!-- 시간 정보들, 일괄적인 정보는 type=datetime-local이다.-->
+  <input type=submit value=submit>
+ </form><br><br>
+ <hr>
+ <h3>홈 제어 시스템(숫자 입력, 온도 조절)</h3>
+ <form method=get>
+  지속 시간(0.0~10.0 시간)
+  <input type=number min=0.0 max=10.0 step=0.5 name=time value="4"><br><br>
+  <!-- number 타입을 사용 , 최대 10 ,최소 0 0.5씩 이동-->
+  온도 설정: 10&deg;
+  <input type=range min=10 max=40 name=temp value="">40&deg;<br><br>
+  <!-- range 타입을 사용 , 최대 40 ,최소 10-->
+  공부 시간(0 ~ 15시간)
+  <input type=number min=0 max=15 name = study step=1 value=""><br><br>
+  공부 시간: 1h
+  <input type=text name="study1" list="time1">15h
+  <datalist id="time1">
+   <option value="2"></option>
+   <option value="4"></option>
+   <option value="7"></option>
+   <option value="10"></option>
+   <option value="13"></option>
+   <option value="15"></option>
+  </datalist><br><br>
+  <!-- datalist를 사용한 코드.-->
+  <input type=submit value=submit>
+ </from><br><br>
+ <hr>
+ <h3>color 선택</h3>
+ <form method=get>
+  <input type=color name=color value="#ff00ff"><br>
+  <!-- 색상 선택할때 타입은 color, 초기값을 줄때 #뒤에 16진수를 사용 앞부터 r(2자리) g(2자리) b(2자리)-->
+  <button type=submit>submit</button>
+ </form>
+ </body>
+</html>

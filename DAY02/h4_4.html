@@ -1,0 +1,45 @@
+<html>
+ <head>
+  <meta charset = "UTF-8">
+  <title>table-basic</title>
+ </head>
+ <body>
+  <h3>table 만들기</h3>
+  <hr>
+  <table border=1 width = 400px align = center>
+   <caption>1학기 성적표</caption>
+   <thead style="background-color:yellow" align = center> 
+   <!-- 표는 thead, tbody tfoot으로 나눌 수 있으며 생략도 가능하다. 공통적인 속성을 주기 위해 사용하며 thead는 기준을 나타내기 위해 많이 사용하기도 한다. -->
+    <tr>
+     <td width = 100px>이름</td>
+     <td>국어</td>
+     <td>수학</td>
+     <td>영어</td>
+    </tr>
+   </thead> 
+   <tbody align = center>
+    <tr>
+     <td>갑순이</td>
+     <td>80</td>
+     <td>85</td>
+     <td>90</td>
+    </tr>
+    <tr>
+     <td>을식이</td>
+     <td>70</td>
+     <td>75</td>
+     <td>80</td>
+    </tr>
+   </tbody>
+   <tfoot style="color:blue">
+    <tr>
+     <th>총계</th>
+     <th>150</th>
+     <th>160</th>
+     <th>170</th>
+    </tr>
+   <tfoot>
+  </table>
+  
+ </body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+ <head>
+  <meta charset = "UTF-8">
+  <title>html-복습하기</title>
+ </head>
+ <body>
+ <h3>나의 일상</h3>
+ <hr>
+ <table align=center border=1 width=500>
+  <caption><b style=color:red>나의 일상<b></caption>
+  <thead style=background-color:orange height=50>
+   <tr>
+    <th width=200>제목</th>
+    <th>내용</th>
+   <tr>
+  </thead>
+  <tbody align = center height=600>
+   <tr>
+    <td>좋아하는 색</td>
+    <td><p><input type=color name=color value="#0000ff"</p></td>
+   </tr>
+   <tr>
+    <td>즐겨 입는 옷</td>
+    <td><select list=clothes name=clothes value="" multiple> 
+            <datalist id=clothes>
+             <option>츄리닝</option>
+             <option>반바지</option>
+             <option>스웨터</option>
+             <option>검정 티</option>
+            </select>
+         <!-- 콤보박스 사용, multiple코드를 사용하면 모든 코드들이 한번에 나오고 ctrl버튼을 누르고 선택하여 다중선택가능 -->
+    </td>
+   </tr>
+   <tr>
+    <td>즐겨 읽는 책</td>
+    <td><input type=text size=20 name=book list =books value="">
+            <datalist id=books>
+             <option>주식 서적</option>
+             <option>컴퓨터 서적</option>
+             <option>아동 서적 </option>
+             <option>여행 서적</option>
+            </datalist>
+            <!-- datalist 사용 코드-->
+    </td>
+   </tr>
+   <tr>
+    <td>하루 공부 시간(1~5시간)</td>
+    <td>1.0<input type=number min=1.0 max=5.0 value=1 step=0.5 name=studytime>5.0</td>
+   </tr>
+   <tr>
+    <td>수면 시간(5~9시간)</td>
+    <td>5.0<input type=range min=5.0 max=9.0 step=0.5 value =6 list=sleep name=sleeptime>9.0
+     <datalist id=sleep>
+      <option value=6></option>
+      <option value=7></option>
+      <option value=7.5></option>
+      <option value=8></option>
+      <option value=8.5></option>
+      <option value=9></option>
+     </datalist>
+     <!-- range타입에 list를 주고 datalist에 id를줘 (list와 데이터리스트의 id가 같아야 함) 옵션에 밸류를 줘서 눈금을 만듬 -->
+    </td>
+   </tr>
+   <tr>
+    <td>자주 보는 영상</td>
+    <td><video src="C:\Users\user\Desktop\html\image\image\Wildlife.mp4" width = 200 height = 150 controls></video></td>
+           <!-- video를 가져올때는 src에 경로를 복사해서 붙여넣기 controls를 안 넣으면 재생이 불가능 ,  /video로 닫아주기 -->
+   </tr>
+   <tr>
+    <td>즐겨듣는 음악</td>
+    <td><audio src="C:\Users\user\Desktop\html\image\image\Kalimba.mp3" controls></audio> </td>
+     <!-- audio를 가져올때는 src에 경로를 복사해서 붙여넣기 controls를 안 넣으면 재생이 불가능 ,  /audio로 닫아주기 -->
+   </tr>
+  </tbody>
+  <tfoot style=background-color:orange align = center height=50>
+   <tr>
+    <td colspan=2><input type=submit value="전송해주세요" name="data"></td>
+   </tr>
+  </tfoot>
+ </table>
+ 
+ </body>
+</html>

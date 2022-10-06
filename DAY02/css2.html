@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>
+            <css_simentic_2 class="html"></css_simentic_2>
+        </title>
+        <style>
+            html,body{
+                margin: 0%; 
+                padding: 0%;
+                font-size: 30px;
+                height: 100%;
+            }
+            #header{
+                width: 100%;
+                height: 10%;
+                background-color: yellow;
+            }
+            #nav{
+                width: 100%;
+                height: 10%;
+                background-color: orange;
+            }
+            #section{
+                width: 70%;
+                height: 70%;
+                float: left;
+            }
+            #article{
+                width:30%;
+                height: 70%;
+                float: left;
+            }
+            #footer{
+                width:100%;
+                height:10%;
+                background-color: violet;
+                clear:both;
+            }
+            #section .section1{
+                width:100%;
+                height: 50%;
+                background-color: green;
+            }
+            #section .section2 .header{
+                width: 100%;
+                height: 25%;
+                background-color: lightgray;
+            }
+            #section .section2 .footer{
+                width: 100%;
+                height: 25%;
+                background-color: brown;
+            }
+            #article .article{
+                width:100%;
+                height: 30%;
+                background-color: pink;
+            }
+            #article .aside{
+                width: 100%;
+                height: 70%;
+                background-color: skyblue;
+            }
+           
+
+        </style>
+    </head>
+    <body>
+        <header id="header">header</header>
+        <nav id="nav">nav</nav>
+        <section id="section">
+            <section class="section1">section1</section>
+            <section class="section2">
+                <header class="header">section2-header</header>
+                <footer class="footer">section2-footer</footer>
+            </section>
+        </section>
+        <article id="article">
+            <article class="article">article</article>
+            <aside class="aside">aside</aside>
+        </article>
+        <footer id="footer">footer</footer>
+    </body>
+</html>
