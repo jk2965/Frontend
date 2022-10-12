@@ -1,33 +1,13 @@
-const calculator ={
-    add: function(a,b){
-        return a+b;
-    },
-    contract: function(a,b){
-        return a-b;
-    },
-    multiply: function(a,b){
-        return a*b;
-    },
-    devide: function(a,b){
-        if(b == 0){
-            console.log("You can't devide as 0");
-        }else{
-            return a/b;
-        }
-    },
-    power: function(a,b){
-        return a**b;
-    },
+const age = parseInt(prompt('How old are you?'));
+
+if(isNaN(age) || age<0){
+    console.log("Please write a real positive number");
+}else if(age<18){
+    console.log("You are too young");
+}else if(age>=18 && age<=50){
+    console.log("You can drink");
+}else if(age>50 && age<=80){
+    console.log("You should exercise");
+}else if(age>80){
+    console.log('You can do whatever you want.');
 }
-
-let plusResult = calculator.add(2,5);
-let contractResult = calculator.contract(3,7);
-let multiplyResult = calculator.multiply(4,3);
-let devideResult = calculator.devide(10,2);
-let powerResult = calculator.power(2,2);
-
-console.log(plusResult);
-console.log(contractResult);
-console.log(multiplyResult);
-console.log(devideResult);
-console.log(powerResult);
